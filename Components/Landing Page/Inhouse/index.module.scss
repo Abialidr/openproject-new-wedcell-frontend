@@ -1,0 +1,132 @@
+.Inhouse {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  .left {
+    position: relative;
+    width: 40%;
+    border-radius: 8px;
+    overflow: hidden;
+    .absolute {
+      border-radius: 8px;
+      position: absolute;
+      height: 350px;
+      padding: 10px 25px;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      //   gap: 20px;
+      left: 0;
+      background: linear-gradient(
+        89.47deg,
+        #b6255a -19.28%,
+        rgba(99, 0, 0, 0) 110.64%
+      );
+      justify-content: space-evenly;
+      > span {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: -0.14000000059604645px;
+        color: rgba(255, 255, 255, 1);
+      }
+      > hgroup {
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 70px;
+        letter-spacing: -0.14000000059604645px;
+        color: rgba(255, 255, 255, 1);
+        position: relative;
+        > p {
+          font-size: 25px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: -0.14000000059604645px;
+          color: rgba(255, 255, 255, 1);
+          position: absolute;
+          right: -70px;
+          bottom: 12px;
+        }
+      }
+      button {
+        border: none;
+        width: fit-content;
+        padding: 8px 20px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(182, 37, 90, 1);
+      }
+    }
+    > img {
+      border-radius: 8px;
+      min-height: 350px;
+      max-height: 350px;
+      width: 100%;
+    }
+  }
+  .right {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    > article {
+      position: relative;
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      .absolute {
+        border-radius: 8px;
+        position: absolute;
+        height: 165px;
+        padding: 10px 25px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        //   gap: 20px;
+        left: 0;
+        background: linear-gradient(
+          89.47deg,
+          #b6255a -19.28%,
+          rgba(99, 0, 0, 0) 110.64%
+        );
+        justify-content: space-around;
+        > span {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 29px;
+          letter-spacing: -0.14000000059604645px;
+          color: rgba(255, 255, 255, 1);
+        }
+
+        button {
+          border: none;
+          width: fit-content;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          background: transparent;
+          border-radius: 50px;
+          font-size: 16px;
+          font-weight: 600;
+          color: white;
+          > span {
+            width: 26px;
+            height: 26px;
+            color: #b6255a;
+            border-radius: 50px;
+            background: white;
+          }
+        }
+      }
+      > img {
+        border-radius: 8px;
+        min-height: 165px;
+        max-height: 165px;
+        width: 100%;
+      }
+    }
+  }
+}
