@@ -1,0 +1,70 @@
+.PlanningTools {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  > div {
+    width: 47%;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    > hgroup {
+      font-family: Poppins;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 54px;
+      letter-spacing: -0.6000000238418579px;
+      color: rgba(182, 37, 90, 1);
+    }
+    > span {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: -0.6000000238418579px;
+      color: rgba(85, 85, 85, 1);
+    }
+    > article {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+      text-align: center;
+      > span {
+        cursor: pointer;
+        width: calc(100% / 5);
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 10px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0em;
+        color: rgba(68, 68, 68, 1);
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        &:hover {
+          color: white;
+          background: rgba(182, 37, 90, 1);
+        }
+        &:hover > img {
+          -webkit-filter: invert(100%); /* Safari/Chrome */
+          filter: invert(100%);
+        }
+      }
+    }
+  }
+  > img {
+    width: 6%;
+    height: 350px;
+    object-fit: contain;
+  }
+  .right {
+    img {
+      width: 100%;
+      height: 350px;
+    }
+  }
+}

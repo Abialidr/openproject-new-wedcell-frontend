@@ -1,0 +1,44 @@
+.Downloads {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  border-radius: 22.73px;
+  background: linear-gradient(0.96deg, #d142a2 -173.37%, #170e26 99.59%);
+  .left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    hgroup {
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 50px;
+      color: rgba(255, 255, 255, 1);
+    }
+    span {
+      color: rgba(255, 255, 255, 1);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+    article {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      > img {
+        cursor: pointer;
+        width: 50%;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
