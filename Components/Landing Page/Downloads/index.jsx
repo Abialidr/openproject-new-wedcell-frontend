@@ -13,7 +13,11 @@ const Downloads = () => {
         </article>
       </div>
       <div className={styles.right}>
-        <img src="/LandingPage/downloadimg.png" alt="" />
+        <img src="/LandingPage/iPhone 12 Pro.png" alt="" />
+        <img src="/LandingPage/iPhone 12 Pro-1.png" alt="" />
+        <img src="/LandingPage/iPhone 12 Pro-4.png" alt="" />
+        <img src="/LandingPage/iPhone 12 Pro-3.png" alt="" />
+        <img src="/LandingPage/iPhone 12 Pro-2.png" alt="" />
       </div>
     </div>
   );

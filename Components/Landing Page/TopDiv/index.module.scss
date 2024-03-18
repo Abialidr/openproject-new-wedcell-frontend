@@ -14,6 +14,7 @@
   z-index: 2;
 }
 .carousel_item {
+  transition: transform 0.5s ease;
   height: 422px;
   min-width: 100% !important;
   transition: transform 0.5s ease-in-out;
@@ -25,7 +26,8 @@
   .absolute {
     left: 0;
     height: 100%;
-    width: 40%;
+    width: 50%;
+    justify-content: space-evenly;
     background: linear-gradient(
       89.06deg,
       #b6255a 11.69%,
@@ -42,7 +44,12 @@
       line-height: 72px;
       letter-spacing: -0.14000000059604645px;
       color: rgba(255, 255, 255, 1);
-      width: 70%;
+      width: 100%;
+      transition: all ease 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: rgba(182, 37, 90, 0.5);
+      }
     }
     > p {
       font-size: 16px;
@@ -50,7 +57,7 @@
       line-height: 24px;
       letter-spacing: -0.14000000059604645px;
       color: rgba(255, 255, 255, 1);
-      width: 70%;
+      width: 100%;
     }
     button {
       border: none;
@@ -61,6 +68,13 @@
       font-size: 16px;
       font-weight: 600;
       color: rgba(182, 37, 90, 1);
+      transition: all ease 0.3s;
+      cursor: pointer;
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+
+        background: rgba(182, 37, 90, 1);
+      }
     }
   }
 }

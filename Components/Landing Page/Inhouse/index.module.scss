@@ -15,9 +15,11 @@
       padding: 10px 25px;
       display: flex;
       flex-direction: column;
-      width: 60%;
+      width: 100%;
       //   gap: 20px;
       left: 0;
+      background-size: 50% !important;
+      background-repeat: no-repeat !important;
       background: linear-gradient(
         89.47deg,
         #b6255a -19.28%,
@@ -32,6 +34,7 @@
         color: rgba(255, 255, 255, 1);
       }
       > hgroup {
+        width: fit-content;
         font-size: 58px;
         font-weight: 700;
         line-height: 70px;
@@ -45,7 +48,7 @@
           letter-spacing: -0.14000000059604645px;
           color: rgba(255, 255, 255, 1);
           position: absolute;
-          right: -70px;
+          right: -100px;
           bottom: 12px;
         }
       }
@@ -58,6 +61,11 @@
         font-size: 16px;
         font-weight: 600;
         color: rgba(182, 37, 90, 1);
+        transition: all ease 0.2s;
+        &:hover {
+          background: rgba(182, 37, 90, 1);
+          color: rgba(255, 255, 255, 1);
+        }
       }
     }
     > img {
@@ -87,12 +95,18 @@
         width: 100%;
         //   gap: 20px;
         left: 0;
+        background-size: 50% !important;
+        background-repeat: no-repeat !important;
         background: linear-gradient(
           89.47deg,
           #b6255a -19.28%,
           rgba(99, 0, 0, 0) 110.64%
         );
         justify-content: space-around;
+        transition: all ease 0.2s;
+        &:hover {
+          background: rgba(255, 255, 255, 0);
+        }
         > span {
           font-size: 20px;
           font-weight: 700;
@@ -112,6 +126,14 @@
           font-size: 16px;
           font-weight: 600;
           color: white;
+          transition: all ease 0.3s;
+          &:hover {
+            color: #b6255a;
+          }
+          &:hover span {
+            background: #b6255a;
+            color: white;
+          }
           > span {
             width: 26px;
             height: 26px;
